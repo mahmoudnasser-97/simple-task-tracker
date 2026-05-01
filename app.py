@@ -1,18 +1,16 @@
 import time
 
 def task_tracker():
-    tasks = ["Learn Java", "Finish Jenkins task", "Use Docker"]
-    
-    print("--- My Task Tracker ---")
+    tasks = ["Learn Java", "finish Jenkins task", "Use Docker"]
+    print("My task tracker app")
     for index, task in enumerate(tasks, 1):
         print(f"{index}. {task}")
     print("-----------------------")
-    
-    print("deployment successful, the container is now up")
-
-    while True:
-        time.sleep(60)
-    return True
+    return tasks
 
 if __name__ == "__main__":
     task_tracker()
+    
+    print("deployment success, container up")
+    while True:
+        time.sleep(60)
