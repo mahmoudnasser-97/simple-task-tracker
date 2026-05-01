@@ -1,0 +1,12 @@
+def task_tracker():
+    # A simple list to act as our "database"
+    tasks = ["Buy groceries", "Finish Jenkins task", "Learn Docker"]
+
+    print("--- My Task Tracker ---")
+    for index, task in enumerate(tasks, 1):
+        print(f"{index}. {task}")
+    print("-----------------------")
+    return True # Returning True helps our test script later
+
+if __name__ == "__main__":
+    task_tracker(
